@@ -42,34 +42,18 @@ to see them
 ________________________________________________
 
 ### 4- lets create our notebook  u can use any platform u like 
-
-1- we have 11 numerical features 
-GrLivArea
-LotArea
-GarageArea
-1stFlrSF
-BsmtFinSF1
-YearBuilt
-YearRemodAdd
-MasVnrArea
-LotFrontage
-WoodDeckSF
-OpenPorchSF
+#### the columns we use in train are 
+OverallQual, GrLivArea, GarageArea, 1stFlrSF, FullBath,
+YearBuilt, YearRemodAdd, MasVnrArea, Fireplaces,
+BsmtFinSF1, LotFrontage, WoodDeckSF, OpenPorchSF,
+LotArea, CentralAir
+>>>>>>>>>
 
 
 2- Binary / Categorical already encoded
 CentralAir → 0 / 1  --> Y/N
 
-3- the rest of categorical features are 
-OverallQual
-FullBath
-Fireplaces
 
-| Feature     |original type  |
-| ----------- | ------------- |
-| OverallQual | rating (1–10) |
-| FullBath    | count         |
-| Fireplaces  | count         |
 
 
 ### All categorical features were encoded using Label Encoding to convert them into numerical format suitable for XGBoost model training. Not optimal but womn't matter to xgnoost 
@@ -79,17 +63,29 @@ ________________________
 ### 6. put the saved model in ur folder
 ________________________
 ### 7. create ur stremlitapp.py
+
+
+
+
 run it using this commmand 
+
 
 streamlit run streamlit_app.py
 
 
+__________________________________
+ctrl+c to close 
+_____________________________
+### Now push everything to the repo this will be our first version :D 
 
 
+git add .
+git status 
 
+git commit m- "1 deploy using a streamlit app "
 
+git push 
 
-
-
+go to ur repo and check it 
 ________________________
 ### 8. deploy it 
